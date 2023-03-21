@@ -1,0 +1,78 @@
+<section>
+  <div class="check-cart">
+    <a href="#list">
+      Cart
+      <span class="btn btn-number-card">
+        <ng-template [ngIf]="carts.length" [ngIfElse]="zeroCart">
+          {{carts.length}} Items
+        </ng-template>
+        <ng-template #zeroCart>
+          0
+        </ng-template>
+      </span>
+    </a>
+  </div>
+</section>
+<section>
+  <div class="list-container">
+    <ng-container *ngIf="products?.length; else loading">
+      <div *ngFor="let p of products" class="list-card">
+        <a routerLink="/items/{{p.id}}" target="_blank">
+          <img src="./assets/{{p.image}}.jpeg" alt="">
+        </a>
+        <div class="list-card-status" [ngStyle]="p.status !== 'New' ? {background: '#c97186'} : {}">
+          <div class="list-card-status-active">
+              {{p.status}}
+          </div>
+        </div>
+        <div class="list-card-body">
+          <h5 class="list-card-body-title">{{p.name}}</h5>
+          <p class="list-card-body-price">{{p.price | currency: 'USD': 'symbol'}}</p>
+          <input type="button" value="Add to cart" class="btn btn-add-card" (click)="createCart(p)">
+        </div>
+      </div>
+    </ng-container>
+    <ng-template #loading>
+      <span>Loading.....</span>
+    </ng-template>
+  </div>
+</section>
+<section>
+  <div id="list">
+    <span>List of products in cart</span>
+    <form action="" #form="ngForm">
+      <table>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Color</th>
+          <th>Amount</th>
+          <th>Delete</th>
+        </tr>
+        <tr *ngFor="let c of carts; index as i">
+          <td>{{i+1}}</td>
+          <td name="name">{{c.name}}</td>
+          <td>
+            <select name="quantity-{{i}}" ngModel [ngModel]="c.quantity" #vQuantity="ngModel">
+              <option *ngFor="let q of [1,2,3,4,5,6]" [ngValue]="q">{{q}}</option>
+            </select>
+          </td>
+          <td name="price">{{c.price}}</td>
+          <td>
+            <select name="color-{{i}}" [ngModel]="c.color">
+              <option *ngFor="let ic of icons" [ngValue]="ic">{{ic}}</option>
+            </select>
+          </td>
+          <td name="amount">{{vQuantity.value * c.price}}</td>
+          <td><a href="#list" (click)="delete(i)">Delete</a>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div>
+    <label>Total: </label>
+  </div>
+</section>

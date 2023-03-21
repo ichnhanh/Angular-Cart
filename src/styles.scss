@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+.list-card {
+  border: 1px solid #464545;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 10px 10px 10px;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: translateX(-3px);
+  }
+  &-status {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 70px;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    opacity: 0.8;
+    z-index: 1000;
+    text-align: center;
+    background: #2ac72a;
+    border-radius-topleft: 5px;
+    &-active {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.btn {
+  padding: 3px;
+  //border: 1px solid black;
+  border-radius: 3px;
+  &-number-card {
+    background-color: #0071e3;
+    color: white;
+  }
+}
+.check-cart {
+  margin: 20px 0;
+  a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+}
+.list-card {
+  img {
+    width: 300px;
+    height: 250px;
+  }
+}
+table {
+  width: 100%;
+}
+table, tr, th, td {
+  border: 1px  solid  black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+}

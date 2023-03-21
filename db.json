@@ -1,0 +1,116 @@
+{
+  "products" : [
+    {
+      "id": "abcU0",
+      "name": "Macbook pro 2019 Ram 8GB, SSD 256GB, 13inch",
+      "status": "Like new",
+      "price": "900",
+      "image": "silver",
+      "color": "Silver"
+    },
+    {
+      "id": "yZd90",
+      "name": "Macbook pro 2019 Ram 16GB, SSD 256GB, 13inch",
+      "status": "Like new",
+      "price": "950",
+      "image": "gray",
+      "color": "Gray"
+    },
+    {
+      "id": "tui0p",
+      "name": "Macbook pro 2019 Ram 16GB, SSD 512GB, 13inch",
+      "status": "New",
+      "price": "1150",
+      "image": "gray",
+      "color": "Gray"
+    },
+    {
+      "id": "iz31l",
+      "name": "Macbook air 2019 Ram 16GB, SSD 512GB, 13inch",
+      "status": "New",
+      "price": "850",
+      "image": "gray",
+      "color": "Gray"
+    },
+    {
+      "id": "qw5ox",
+      "name": "Macbook ari 2019 Ram 16GB, SSD 256GB, 13inch",
+      "status": "New",
+      "price": "700",
+      "image": "silver",
+      "color": "Silver"
+    },
+    {
+      "id": "mj4mn",
+      "name": "Macbook air 2019 Ram 16GB, SSD 512GB, 13inch",
+      "status": "Like new",
+      "price": "750",
+      "image": "gold",
+      "color": "Gold"
+    },
+    {
+      "id": "ld555",
+      "name": "Macbook pro 2021 Ram 8GB, SSD 256GB, 13inch",
+      "status": "New",
+      "price": "1000",
+      "image": "gray",
+      "color": "Gray"
+    },
+    {
+      "id": "vmz99",
+      "name": "Macbook pro 2021 Ram 8GB, SSD 512GB, 13inch",
+      "status": "Like new",
+      "price": "990",
+      "image": "gray",
+      "color": "Gray"
+    },
+    {
+      "id": "99qrt",
+      "name": "Macbook pro 2021 Ram 8GB, SSD 512GB, 13inch",
+      "status": "New",
+      "price": "1200",
+      "image": "gray",
+      "color": "Gray"
+    },
+    {
+      "id": "cxm32",
+      "name": "Macbook air 2021 Ram 8GB, SSD 512GB, 13inch",
+      "status": "New",
+      "price": "1200",
+      "image": "gray",
+      "color": "Gray"
+    },
+    {
+      "id": "ne78f",
+      "name": "Macbook air 2021 Ram 8GB, SSD 256GB, 13inch",
+      "status": "New",
+      "price": "930",
+      "image": "gray",
+      "color": "Gray"
+    },
+    {
+      "id": "xzm8i",
+      "name": "Macbook air 2019 Ram 16GB, SSD 512GB, 13inch",
+      "status": "New",
+      "price": "1300",
+      "image": "gold",
+      "color": "Gold"
+    },
+    {
+      "id": "fkl8b",
+      "name": "Macbook pro 2023 Ram 32GB, SSD 512GB, 13inch",
+      "status": "New",
+      "price": "2350",
+      "image": "gray",
+      "color": "Gray"
+    },
+    {
+      "id": "qp774",
+      "name": "Macbook pro 2023 Ram 32GB, SSD 1T, 13inch",
+      "status": "New",
+      "price": "2550",
+      "image": "silver",
+      "color": "Silver"
+    }
+  ]
+}
